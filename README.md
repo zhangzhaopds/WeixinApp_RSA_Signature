@@ -1,9 +1,4 @@
-title: 【小程序】RSA签名
-type: categories
-date: 2017-05-27 17:01:15
-categories: 小程序
-tags: [RSA, 签名]
----
+
 
 > 一个适用于微信小程序的RSA签名库。
 
@@ -32,7 +27,7 @@ var privateKey_pkcs1 = '-----BEGIN RSA PRIVATE KEY-----MIICXQIBAAKBgQCk7WKdggwBO
     console.log("签名结果：" + hSig)
 ```
 
-需要注意的是：区分RSA私钥的类型，有pkcs1何pkcs8。pkcs8格式的私钥主要用于java中。
+需要注意的是：区分RSA私钥的类型，有pkcs1和pkcs8。pkcs8格式的私钥主要用于java中。
 
 ```javascript
 // pkcs1格式：
