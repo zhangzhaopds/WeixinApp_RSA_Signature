@@ -23,6 +23,12 @@ var privateKey_pkcs1 = '-----BEGIN RSA PRIVATE KEY-----MIICXQIBAAKBgQCk7WKdggwBO
     console.log(rsa)
     var hashAlg = 'sha1'; // 设置sha1 sha256
     var hSig = rsa.signString("signData", hashAlg); // 加签
+
+    var verify = new RSA.RSAKey();
+    verify = RSA.KEYUTIL.getKey(publicKey_pkcs1);
+    var ver = verify.verifyString("signData", hSig) // 验签
+    console.log(ver)
+
     hSig = RSA.hex2b64(hSig); // hex 转 b64
     console.log("签名结果：" + hSig)
 ```
