@@ -14457,5 +14457,6 @@ KJUR.jws.JWSJS = function() {
 module.exports = {
     RSAKey: RSAKey,
     KEYUTIL: KEYUTIL,
-    hex2b64: hex2b64
+    hex2b64: hex2b64,
+    b64tohex: b64tohex
 }
