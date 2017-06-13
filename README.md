@@ -37,7 +37,7 @@ var privateKey_pkcs1 = '-----BEGIN RSA PRIVATE KEY-----MIICXQIBAAKBgQCk7WKdggwBO
     var ver = verify_rsa.verifyString("signData", hSig) 
     console.log('验签结果：' + ver)
 
-    // 加密
+    // 加密 【加密字段长度不大于117】
     var encrypt_rsa = new RSA.RSAKey();
     encrypt_rsa = RSA.KEYUTIL.getKey(publicKey_pkcs1);
     console.log('加密RSA:')
