@@ -4092,7 +4092,7 @@ function byte2Hex(a) {
 }
 function pkcs1pad2(e, h) {
     if (h < e.length + 11) {
-        alert("Message too long for RSA");
+        console.log("Message too long for RSA")
         return null
     }
     var g = new Array();

@@ -41,12 +41,12 @@ Page({
     var ver = verify_rsa.verifyString("signData", hSig) 
     console.log('验签结果：' + ver)
 
-    // 加密
+    // 加密 【加密字段长度不大于117】
     var encrypt_rsa = new RSA.RSAKey();
     encrypt_rsa = RSA.KEYUTIL.getKey(publicKey_pkcs1);
     console.log('加密RSA:')
     console.log(encrypt_rsa)
-    var encStr = encrypt_rsa.encrypt('123456')
+    var encStr = encrypt_rsa.encrypt('123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567')
     encStr = RSA.hex2b64(encStr);
     console.log("加密结果：" + encStr)
 
