@@ -1,6 +1,6 @@
 
 
-> 一个适用于微信小程序的RSA签名库。
+> 一个适用于微信小程序的RSA签名0库。
 
 RSA签名的小程序DEMO：[https://github.com/zhangzhaopds/WeixinApp_RSA_Signature.git](https://github.com/zhangzhaopds/WeixinApp_RSA_Signature.git)
 
